@@ -163,320 +163,320 @@
   expected-result: |
     Рейтинг пользователей отображается корректно и соответствует фактическим данным 
     
-- summary : |
+- summary: |
     Проверка отображения меню турниры
-  requirement : |
+  requirement: |
     Система должна отображать список и состояние турниров
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти в меню турниры в настройках профиля
     - Выбрать турнир
-  expected-result : |
+  expected-result: |
     Турниры отображаются корректно
 
-- summary : |
+- summary: |
     Проверка перехода по ссылке исходный код
-  requirement : |
+  requirement: |
     Должна открываться страница исходного кода на гитхабе
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти по кнопке исходный код в настройках профиля
-  expected-result : |
+  expected-result: |
     Открывается страница исходного кода на гитхабе
 
-- summary : |
+- summary: |
     Проверка перехода по ссылке "Хекслет"
-  requirement : |
+  requirement: |
     Должна открываться главная страница "Хекслет"
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти по кнопке "Хекслет" в настройках профиля
-  expected-result : |
+  expected-result: |
     Открывается главная страница "Хекслет"
 
-- summary : |
+- summary: |
     Проверка перехода по ссылке "Дискорд"
-  requirement : |
+  requirement: |
     Должна открываться главная страница "Дискорд"
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти по кнопке присоединяйтесь к "Дискорд" в настройках профиля
-  expected-result : |
+  expected-result: |
     Открывается главная страница "Дискорд"
 
-- summary : |
+- summary: |
     Проверка перехода по ссылке "Телеграм"
-  requirement : |
+  requirement: |
     Должна открываться главная страница "Телеграм"
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти по кнопке "Телеграм" в настройках профиля
-  expected-result : |
+  expected-result: |
     Открывается страница "Телеграм"
 
-- summary : |
+- summary: |
     Проверка возможности выйти из аккаунта
-  requirement : |
+  requirement: |
     Должна осуществляться выход из аккаунта
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     - Логин "Marko"
     - Пароль "123"
     - Email "marko@mail.ru"
-  steps :
+  steps:
     - Перейти в настройки профиля
     - Нажать на кнопку выйти
-  expected-result : |
+  expected-result: |
     Пользователь выходит из аккаунта
 
-- summary : |
+- summary: |
     Проверка отображения таблицы лидеров
-  requirement : |
+  requirement: |
     Должна отображаться таблица лидеров
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - На главной странице изучить таблицу лидеров
-  expected-result : |
+  expected-result: |
     Отображается таблица лидеров на главной странице
 
-- summary : |
+- summary: |
     Проверка возможности создать игру
-  requirement : |
+  requirement: |
     Должна создаваться игра
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - На главной странице нажать кнопку создать игру
-  expected-result : |
+  expected-result: |
     Создаётся игра
 
-- summary : |
+- summary: |
     Проверка возможности выбора противника
-  requirement : |
+  requirement: |
     Должен выбираться противник из тех кто в онлайн
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В лобби на главной странице выбрать противника
     - Нажать драться
-  expected-result : |
+  expected-result: |
     Загружается бой с выбранным противником
 
-- summary : |
+- summary: |
     Проверка возможности просматривать историю турниров
-  requirement : |
+  requirement: |
     Должна отображаться история турниров
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - На главной странице нажать история
     - Просмотреть прошедшие турниры
-  expected-result : |
+  expected-result: |
     Отображается история турниров
 
-- summary : |
+- summary: |
     Проверка возможности создавать новый турнир
-  requirement : |
+  requirement: |
        Должен создаваться новый турнир
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В лобби на главной странице нажать турниры
     - Перейти по кнопке информация о турнирах
     - В нижней части открывшейся страницы турниры создать турнир
-  expected-result : |
+  expected-result: |
     Создаётся новый турнир
 
-- summary : |
+- summary: |
     Проверка возможности присоединиться к турниру
-  requirement : |
+  requirement: |
     Должно отображаться имя пользователя среди участников турнира
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В лобби на главной странице нажать турниры
     - Открыть доступный турнир на кнопку показывать
     - На странице открывшегося турнира нажать присоединиться
-  expected-result : |
+  expected-result: |
     Отображается имя пользователя среди участников турнира
 
-- summary : |
+- summary: |
     Проверка перехода на главную страницу нажатием на логотип
-  requirement : |
+  requirement: |
     Должна открываться главная страница
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Нажать на логотип с названием наверху сайта
-  expected-result : |
+  expected-result: |
     Открывается главная страница
 
-- summary : |
+- summary: |
     Проверка работоспособности чата на главной странице
-  requirement : |
+  requirement: |
     Должно отправляться сообщение в чате
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти в нижнюю часть главной страницы
     - В поле для ввода ввести текст
     - Нажать отправить
-  expected-result : |
+  expected-result: |
     Отправляется сообщение в чате
 
-- summary : |
+- summary: |
     Отображение версии сайта
-  requirement : |
+  requirement: |
     Слева внизу должна отображаться версия сайта
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти в нижнюю часть любой страницы
-  expected-result : |
+  expected-result: |
     Отображается версия сайта
 
-- summary : |
+- summary: |
     Возможность выбора языка программирования
-  requirement : |
+  requirement: |
     На странице боя должен быть выбор языка программирования
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта главная страница
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Выбрать противника в лобби на главной странице
     - Нажать драться
     - Под задачей с примерами открыть кнопку выбора языка
-  expected-result : |
+  expected-result: |
     Отображается выбор языков для программирования
 
-- summary : |
+- summary: |
     Переключение темы в окне ввода кода
-  requirement : |
+  requirement: |
     Тема в окне ввода кода должна переключаться на тёмную или светлую
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта страница боя
-  test-data :|
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Под задачей с примерами переключить тему
-  expected-result : |
+  expected-result: |
     Тема переключается на тёмную или светлую
 
-- summary : |
+- summary: |
     Отображение пользователей онлайн
-  requirement : |
+  requirement: |
     Слева внизу главной страницы должны отображаться пользователи онлайн
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Перейти в нижнюю часть главной страницы
-  expected-result : |
+  expected-result: |
     Внизу главной страницы отображаются пользователи онлайн
 
-- summary : |
+- summary: |
     Возможность просмотреть страницу противника
-  requirement : |
+  requirement: |
     Должна открываться страница выбранного противника
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - На главной странице нажать на ник противника
-  expected-result : |
+  expected-result: |
     Открывается страница противника
 
-- summary : |
+- summary: |
     Проверка отображения таймера
-  requirement : |
+  requirement: |
     На странице боя должен корректно отображаться
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован, открыта страница боя
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В верхней части страницы боя находится таймер
-  expected-result : |
+  expected-result: |
     На странице боя корректно отображается таймер
 
-- summary : |
+- summary: |
     Проверка возможности выйти из боя
-  requirement : |
+  requirement: |
     Должна быть возможность выйти из боя
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - Открыть страницу боя
     - Над окном ввода кода нажать троеточие
     - Из открывшегося списка нажать сдаться
-  expected-result : |
+  expected-result: |
     На экране всплывает сообщение об окончании игры
 
-- summary : |
+- summary: |
     Возможность просматривать свой профиль
-  requirement : |
+  requirement: |
     Должен открываться личный профиль
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В верхней части страницы справа открыть личный профиль
-  expected-result : |
+  expected-result: |
     Открывается личный профиль
 
-- summary : |
+- summary: |
     Возможность менять настройки в личном профиле
-  requirement : |
+  requirement: |
     В личном профиле можно менять настройки
-  prerequisites : |
+  prerequisites: |
     Пользователь авторизован
-  test-data : |
+  test-data: |
     Нет данных
-  steps :
+  steps:
     - В верхней части страницы справа открыть личный профиль
     - Открыть меню настройки
-  expected-result : |
+  expected-result: |
     В личном профиле можно менять настройки
 
 - summary: |
